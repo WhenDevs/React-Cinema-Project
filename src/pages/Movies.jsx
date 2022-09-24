@@ -1,22 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 // Import CSS
-import '../assets/css/tvshows.css';
+import '../assets/css/movies.css';
 
 // Import Components
-import { Footer, Marketing } from "../components";
+import { Footer, Marketing } from '../components';
 
-// Import TVShows Images
+// Import Movies Images
 import {
-  linkTvOne,
-  linkTvTwo,
-  linkTvThree,
-  linkTvFour,
-  linkTvFive,
-  linkTvSix,
-} from '../assets/index';
+    linkMvOne,
+    linkMvTwo,
+    linkMvThree,
+    linkMvFour,
+    linkMvFive,
+    linkMvSix,
+  } from '../assets/index';
 
-function TvShows() {
+function Movies() {
   return (
     <div>
       <header>
@@ -32,12 +33,12 @@ function TvShows() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/tvshows" className="nav-link active">
+                <Link to="/tvshows" className="nav-link">
                   TV Shows
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/movies" className="nav-link">
+                <Link to="/movies" className="nav-link active">
                   Movies
                 </Link>
               </li>
@@ -50,106 +51,179 @@ function TvShows() {
           </nav>
         </div>
       </header>
-      <section className="section section-tvshows">
+      <section className="section section-movies">
         <div className="container">
           <h2 className="section__h2">
-            <a href="/#" className="section__h2-link">
-              Trending TV Shows
+            <a className="section__h2-link" href="/movies">
+              Trending Movies
             </a>
           </h2>
           <div className="movies">
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvOne} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvOne}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvTwo} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvTwo}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvThree} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvThree}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvFour} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvFour}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvFive} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvFive}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvSix} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvSix}
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="movies">
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvOne}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvTwo}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvThree}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvFour}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvFive}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="movies-item">
+              <div className="movies__link">
+                <img
+                  className="movies__img"
+                  src={linkMvSix}
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div className="movies">
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvOne} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvOne}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvTwo} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvTwo}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvThree} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvThree}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvFour} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvFour}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvFive} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvFive}
+                  alt=""
+                />
               </div>
             </div>
             <div className="movies-item">
               <div className="movies__link">
-                <img className="movies__img" src={linkTvSix} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="movies">
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvOne} alt="" />
-              </div>
-            </div>
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvTwo} alt="" />
-              </div>
-            </div>
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvThree} alt="" />
-              </div>
-            </div>
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvFour} alt="" />
-              </div>
-            </div>
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvFive} alt="" />
-              </div>
-            </div>
-            <div className="movies-item">
-              <div className="movies__link">
-                <img className="movies__img" src={linkTvSix} alt="" />
+                <img
+                  className="movies__img"
+                  src={linkMvSix}
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -162,4 +236,4 @@ function TvShows() {
   );
 }
 
-export default TvShows;
+export default Movies;

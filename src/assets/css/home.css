@@ -519,6 +519,7 @@ html {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 14%;
             flex: 0 0 14%;
+            cursor: pointer;
   }
   
   @media (max-width: 1000px) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Import CSS
 import '../assets/css/home.css';
@@ -41,30 +42,30 @@ function Home() {
     <div>
       <header>
         <div className="header">
-          <a className="header-logo" href="/#">
+          <Link className="header-logo" to="/">
             KINOLIFE
-          </a>
+          </Link>
           <nav>
             <ul className="nav">
               <li className="nav-item">
-                <a href="./Home.jsx" className="nav-link active">
+                <Link to="/" className="nav-link active">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="./TvShows.jsx" className="nav-link">
+                <Link to="/tvshows" className="nav-link">
                   TV Shows
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/#" className="nav-link">
+                <Link to="/movies" className="nav-link">
                   Movies
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/#" className="nav-link">
+                <Link to="/serials" className="nav-link">
                   Serials
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -100,9 +101,9 @@ function Home() {
       <section className="section">
         <div className="container">
           <h2 className="section__h2">
-            <a className="section__h2-link" href="./tvshows.html">
+            <Link className="section__h2-link" to="/tvshows">
               Trending TV Shows
-            </a>
+            </Link>
           </h2>
           <div className="movies">
             <div className="movies-item">
@@ -142,9 +143,9 @@ function Home() {
       <section className="section">
         <div className="container">
           <h2 className="section__h2">
-            <div className="section__h2-link" href="./movies.html">
+            <Link className="section__h2-link" to="/movies">
               Trending Movies
-            </div>
+            </Link>
           </h2>
           <div className="movies">
             <div className="movies-item">
@@ -184,9 +185,9 @@ function Home() {
       <section className="section section__serial">
         <div className="container">
           <h2 className="section__h2">
-            <a className="section__h2-link" href="./serials.html">
+            <Link className="section__h2-link" to="/serials">
               Trending Serials
-            </a>
+            </Link>
           </h2>
           <div className="movies">
             <div className="movies-item">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, TvShows } from "./pages";
+import { Home, TvShows, Movies, Serials } from "./pages";
 
 export default function App() {
   return (
@@ -8,6 +8,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tvshows" element={<TvShows />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/serials" element={<Serials />} />
       </Routes>
     </div>
   );
