@@ -37,7 +37,11 @@ import {
   linkSlSix,
 } from '../assets/index';
 
+import Modal from "../components/Modal/Modal";
+
 function Home() {
+
+
   return (
     <div>
       <header>
@@ -88,15 +92,11 @@ function Home() {
               impostor, Marla Singer, begins attending the same groups. The two agree to split which
               groups they attend.
             </p>
-            <div className="banner-control">
-              <button className="banner-control__btn banner-control__btn-main">Watch</button>
-              <button className="banner-control__btn banner-control__btn-more">
-                More information
-              </button>
-            </div>
+            <Modal/>
           </div>
         </div>
       </section>
+
 
       <section className="section">
         <div className="container">
